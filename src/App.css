@@ -1,0 +1,189 @@
+/* General styles */
+body {
+  background-color: #1e1e1e;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.todoapp{
+  background: #353434;
+  padding: 2%;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0px 5px 7px black;
+}
+
+
+h1 {
+  text-align: center;
+  color: rgb(0, 230, 122);
+}
+
+.input-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.input-container-item{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 25px;
+}
+
+.input-container-item label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 250px;
+  padding: 8px;
+  background-color: #ece3e3;
+  color: black;
+  border: 2px solid rgb(0, 230, 122);
+  outline: none;
+}
+
+.search-container{
+  text-align: right;
+}
+
+button {
+  padding: 8px;
+  margin-top: 25px;
+  width: 60px;
+  border: none;
+  border-radius: 0px;
+  background-color: rgb(0, 230, 122);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(4, 196, 106);
+}
+
+.secondaryBtn {
+  padding: 10px;
+  margin-top: 25px;
+  width: fit-content;
+  background-color: rgb(0, 230, 122);
+}
+
+/* Todo list styles */
+.todo-wrapper {
+  background: #353434;
+  border: none;
+  /* Enable vertical scrolling */
+}
+
+.todo-list {
+  list-style: none;
+  padding: 10;
+}
+
+.todo-list-item {
+  padding: 10px;
+  border-bottom: 1px solid #555;
+  background-color: #444;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-list-item.completed h3 {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-list-item h3 {
+  margin: 10;
+  color:  rgb(0, 230, 122);
+  font-size: 24px;
+}
+
+.todo-list-item p {
+  margin: 5px 0;
+  color: #efebeb;
+}
+
+.todo-list-item .timestamp {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.actions{
+  size: 5px;
+}
+.actions button {
+  margin-left: 10px;
+  background-color: #444;
+  color: rgb(0, 230, 122);
+  size: 20px;
+}
+
+.actions button:hover {
+  background-color: #555;
+}
+
+.checkBtn {
+  font-size: 17px;
+  color: #fff; /* Updated color to white */
+}
+
+.actions .EditBtn {
+  font-size: 17px;
+  color: #fff; /* Ensure color is set to white */
+}
+
+.deleteBtn {
+  font-size: 17px;
+}
+
+/* Tabs styles */
+
+.tabs-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.search-container {
+  flex-grow: 1;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.tabs button {
+  padding: 10px;
+  margin: 5px;
+  
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.tabs button:hover {
+  opacity: 0.8;
+}
