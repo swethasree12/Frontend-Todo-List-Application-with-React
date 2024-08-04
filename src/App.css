@@ -1,12 +1,12 @@
 /* General styles */
 body {
-  background-color: #1e1e1e;
+  background-color: #efeded;
   color: rgb(255, 255, 255);
   overflow: hidden;
 }
 
 .todoapp{
-  background: #353434;
+  background: black;
   padding: 2%;
   width: fit-content;
   margin-left: auto;
@@ -20,7 +20,7 @@ body {
 
 h1 {
   text-align: center;
-  color: rgb(0, 230, 122);
+  color: rgb(14, 13, 13);
 }
 
 .input-container{
@@ -48,7 +48,7 @@ input[type="text"] {
   padding: 8px;
   background-color: #ece3e3;
   color: black;
-  border: 2px solid rgb(0, 230, 122);
+  border: 2px solid rgb(184, 122, 242);
   outline: none;
 }
 
@@ -62,20 +62,20 @@ button {
   width: 60px;
   border: none;
   border-radius: 0px;
-  background-color: rgb(0, 230, 122);
+  background-color: blueviolet;
   color: #fff;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: rgb(4, 196, 106);
+  background-color: rgb(83, 6, 156);
 }
 
 .secondaryBtn {
   padding: 10px;
   margin-top: 25px;
   width: fit-content;
-  background-color: rgb(0, 230, 122);
+  background-color: blueviolet;
 }
 
 /* Todo list styles */
@@ -109,7 +109,7 @@ button:hover {
 
 .todo-list-item h3 {
   margin: 10;
-  color:  rgb(0, 230, 122);
+  color:  blueviolet;
   font-size: 24px;
 }
 
@@ -129,7 +129,7 @@ button:hover {
 .actions button {
   margin-left: 10px;
   background-color: #444;
-  color: rgb(0, 230, 122);
+  color: blueviolet;
   size: 20px;
 }
 
@@ -162,7 +162,7 @@ button:hover {
 
 .tabs {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   padding: 25px;
 }
 
