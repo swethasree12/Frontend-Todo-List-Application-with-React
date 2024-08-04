@@ -1,45 +1,45 @@
 # ToDoList Application
 
 ## Overview
-This ToDoList application is built using React. It allows users to add, delete, and mark tasks as completed. The application is designed to be simple and user-friendly, providing a seamless experience for managing daily tasks.
+React is used in the construction of this ToDoList app. Users are able to add, remove, and mark tasks as finished. The application offers a smooth everyday task management experience because of its straightforward and user-friendly design.
 
 ## System Design
-The application is structured into several key components, each responsible for a specific part of the functionality:
+The program is divided into multiple essential parts, each in charge of a particular aspect of its functionality:
 
-### Components
-- **App**: The main component that holds the state and renders other components. It manages the list of tasks and handles the logic for adding, deleting, and toggling the completion status of tasks.
-- **ToDoList**: A component that receives the list of tasks as props and maps over them to render `ToDoItem` components. It acts as a container for the task items.
-- **ToDoItem**: A component that represents a single task. It displays the task description and provides buttons to delete the task or mark it as completed. It also handles the visual representation of the task's completion status.
-- **AddToDo**: A component that provides an input field and a button to add new tasks. It lifts the state up to the `App` component to update the task list.
+### Components: 
+**App** is the primary component that renders other components and maintains state. It maintains the task list and takes care of the logic for adding, removing, and switching between tasks' completion states.
+- **ToDoList**: A component that renders `ToDoItem` components by mapping over the tasks on the list as props. It serves as a holding area for the work items.
+- **ToDoItem**: An element that stands in for a particular task. The task description is shown, and buttons to mark the task as done or erase it are provided. It also manages the task's visual completion status depiction.
+- **AddToDo**: An element with a button and input field for adding new tasks. To update the task list, it raises the state to the {App} component.
 
 ### State Management
-The state management is handled using React's `useState` hook. The `App` component maintains the state of the tasks, which is an array of task objects. Each task object contains the following properties:
-- `text`: The description of the task.
-- `completed`: A boolean indicating whether the task is completed.
+React's `useState` hook is used to manage the state. The tasks' state—an array of task objects—is preserved by the `App` component. Every task object has the following attributes:
+- {text}: The task description.
+- {completed}: A boolean representing the task's completion status.
 
 ### Data Flow
-1. **Adding a Task**: When a user enters a task in the `AddToDo` component and clicks the add button, the task is lifted up to the `App` component, which updates the state with the new task.
-2. **Deleting a Task**: When a user clicks the delete button on a `ToDoItem`, the `App` component updates the state by removing the task from the list.
-3. **Toggling Task Completion**: When a user clicks the complete button on a `ToDoItem`, the `App` component updates the state by toggling the `completed` property of the task.
+1. **Adding a Task**: The task is raised up to the `App` component, which updates the state with the new task, when a user enters it in the `AddToDo} component and clicks the add button.
+2. **Deleting a Task**: The `App` component modifies the state by eliminating the task from the list when a user clicks the delete button on a `ToDoItem}.
+3. **Toggling Task Completion**: The `App} component modifies the state by toggling the `completed} property of the task when a user clicks the complete button on a `ToDoItem}.
 
-### Styling
-The application is styled using CSS, which is contained in the `app.css` file. The styles ensure a clean and responsive design, with specific styles for the layout, buttons, and task items.
+### Fashion
+The `app.css` file contains CSS, which is used to style the application. With distinct styles for the layout, buttons, and task items, the styles guarantee a simple and responsive design.
 
 ## Implementation
 ### App Component
-The `App` component is the root component of the application. It maintains the state of the tasks and passes down necessary props to child components. It handles the following functionalities:
-- **Adding a Task**: The `addTask` function is used to add a new task to the state. It generates a unique ID for each task and sets the `completed` property to `false` by default.
-- **Deleting a Task**: The `deleteTask` function is used to remove a task from the state based on its ID.
-- **Toggling Task Completion**: The `toggleTaskCompletion` function is used to toggle the `completed` property of a task based on its ID.
+The root component of the application is the `App` component. It keeps the tasks in their current state and transfers the required props to the child components. The following functions are managed by it:
+- **Adding a Task**: To add a new task to the state, use the `addTask` function. Every job is assigned a distinct ID, and the `completed` field is automatically set to `false`.
+- **Deleting a Task**: A task can be eliminated from the state by using its ID and the `deleteTask` function.
+- **Toggling Task Completion**: A task's `completed` property can be toggled depending on its ID using the `toggleTaskCompletion` function.
 
-### ToDoList Component
-The `ToDoList` component receives the list of tasks as props and maps over them to render `ToDoItem` components. It acts as a container for the task items and passes down necessary props to each `ToDoItem`.
+### To-Do List Item
+The tasks list is given to the `ToDoList` component as props, which it then maps over to create `ToDoItem` components. It holds the task items and provides each {ToDoItem} with the relevant props.
 
 ### ToDoItem Component
-The `ToDoItem` component represents a single task. It displays the task description and provides buttons to delete the task or mark it as completed. It handles the visual representation of the task's completion status by applying different CSS classes based on the `completed` property.
+The single job is represented by the `ToDoItem` component. The task description is shown, and buttons to mark the task as done or erase it are provided. It uses several CSS classes depending on the {completed} attribute to handle the task's visual representation of completion state.
 
 ### AddToDo Component
-The `AddToDo` component contains an input field and a button to add new tasks. It lifts the state up to the `App` component to update the task list. The `handleSubmit` function is used to handle the form submission and call the `addTask` function in the `App` component.
+A button to add new tasks and an input field are both present in the `AddToDo` component. To update the task list, it raises the state to the {App} component. The `addTask` function in the `App} component is called by the `handleSubmit` function, which also handles form submissions.
 
 ## Setup and Run
 ### Prerequisites
@@ -50,13 +50,11 @@ The `AddToDo` component contains an input field and a button to add new tasks. I
     ```bash
     npm install
     ```
-
 ### Running the Application
 1. Start the development server:
     ```bash
     npm start
     ```
-
 2. Open your browser and navigate to `http://localhost:3000` to see the application in action.
 
 ### Building for Production
