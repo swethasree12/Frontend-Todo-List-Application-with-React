@@ -110,14 +110,14 @@ const Tabs = ({ currentTab, setCurrentTab }) => (
     <button 
       className='secondaryBtn'
       onClick={() => setCurrentTab('todo')} 
-      style={{ backgroundColor: currentTab === 'todo' ? 'rgb(0, 230, 122)' : 'gray' }}
+      style={{ backgroundColor: currentTab === 'todo' ? 'blueviolet' : 'gray' }}
     >
       Todo
     </button>
     <button 
       className='secondaryBtn'
       onClick={() => setCurrentTab('completed')} 
-      style={{ backgroundColor: currentTab === 'completed' ? 'rgb(0, 230, 122)' : 'gray' }}
+      style={{ backgroundColor: currentTab === 'completed' ? 'blueviolet' : 'gray' }}
     >
       Completed
     </button>
